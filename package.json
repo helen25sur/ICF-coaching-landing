@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "gatsby": "^5.13.3",
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-tailwindcss": "^1.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
