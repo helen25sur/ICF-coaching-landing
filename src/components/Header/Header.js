@@ -50,7 +50,7 @@ const Header = () => {
               </nav>
             </div>
             <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
-              <a href="#participate" className="dark:bg-dark-2 dark:hover:bg-dark-3 rounded-md bg-dark px-7 py-3 text-base font-medium text-white hover:bg-body-color">
+              <a href="#participate" className="inline-flex items-center justify-center rounded-md border border-primary bg-primary px-7 py-3 text-center text-base font-medium text-white hover:border-[#1B44C8] hover:bg-[#1B44C8] active:border-[#1B44C8] active:bg-[#1B44C8] disabled:border-gray-3 disabled:bg-gray-3 disabled:text-dark-5">
                 Взяти участь
               </a>
             </div>

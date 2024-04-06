@@ -5,7 +5,7 @@ const ThemeToggler = () => {
   return (
     <Toggler>
       {({ theme, toggleTheme }) => (
-        <div className="flex flex-col justify-center ml-3 absolute right-[24%] sm:right-[50%] lg:static">
+        <div className="flex flex-col justify-center ml-3 absolute right-[-10%] sm:right-[-40px] lg:static">
           <label className="cursor-pointer p-4 border-slate-400 dark:border-slate-300 border-2 rounded-md" htmlFor="light-switch">
             <input type="checkbox" onChange={e => {
               console.log(e.target);
