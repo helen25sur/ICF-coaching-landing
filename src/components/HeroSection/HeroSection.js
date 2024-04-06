@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section id="about_us" className="relative pb-[80px] pt-[80px] dark:bg-dark lg:pt-[120px]">
+    <section id="about_us" className="relative pb-[80px] pt-[100px] dark:bg-dark lg:pt-[120px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap items-center">
           <div className="w-full px-4 lg:w-1/2">

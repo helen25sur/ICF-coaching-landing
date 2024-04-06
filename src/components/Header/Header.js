@@ -7,7 +7,7 @@ const Header = () => {
       className="fixed bg-white bg-opacity-80 dark:bg-dark shadow-sm backdrop-blur-sm left-0 top-0 z-50 w-full">
       <div className="container mx-auto">
         <div className="relative z-40 -mx-4 flex items-center justify-between">
-          <div className="w-60 max-w-full px-4">
+          <div className="w-64 max-w-full px-4">
             <a href="/" className="block w-full py-5">
               <span className="text-xl font-bold leading-[1.208] text-dark dark:text-white lg:text-[12px] xl:text-[16px]">Coach your IT start</span>
             </a>
