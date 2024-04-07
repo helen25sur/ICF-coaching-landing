@@ -3,6 +3,7 @@ import Header from "../components/Header/Header";
 import HeroSection from "../components/HeroSection/HeroSection";
 import ForWhom from "../components/ForWhom/ForWhom";
 import Speakers from "../components/Speakers/Speakers";
+import ProgramProject from "../components/ProgramProject/ProgramProject";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <ForWhom />
       <Speakers />
+      <ProgramProject />
     </>
   )
 }
