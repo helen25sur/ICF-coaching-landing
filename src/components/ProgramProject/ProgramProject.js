@@ -70,11 +70,11 @@ const ProgramProject = () => {
           <h3 className="mb-9 text-2xl font-bold leading-[1.2] text-primary dark:text-blue-200 sm:text-3xl md:text-[32px]">
             КОУЧИНГОВИЙ СУПРОВІД
           </h3>
-          <ul className='space-y-3'>
+          <ul className='space-y-3 mb-10'>
             {
               consultingSupportJSON.support.map(sup => {
                 return (
-                  <li class="flex  text-xl text-dark-3 dark:text-dark-8 max-w-2xl">
+                  <li class="flex text-xl text-dark-3 dark:text-dark-8 max-w-2xl">
                     <span class="mr-2.5 mt-0.5 text-primary">
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_980_24852)">
@@ -94,6 +94,7 @@ const ProgramProject = () => {
               })
             }
           </ul>
+          <p className='text-xl text-center text-dark-3 dark:text-dark-8 max-w-3xl'><strong className='text-primary dark:text-blue-200'>Наш проєкт</strong> – це структурований підхід до пошуку роботи через практичне пропрацювання проблем: від зовнішньої “упаковки” власної експертизи (резюме, LinkedIn профіль, техніка співбесіди) до внутрішньої впевненості, що переконає будь-якого рекрутера</p>
         </div>
       </div>
     </section>
