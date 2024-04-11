@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import ForWhom from "../components/ForWhom/ForWhom";
 import Speakers from "../components/Speakers/Speakers";
 import ProgramProject from "../components/ProgramProject/ProgramProject";
+import ParticipationPackages from "../components/ParticipationPackages/ParticipationPackages";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <ForWhom />
       <Speakers />
       <ProgramProject />
+      <ParticipationPackages />
     </>
   )
 }

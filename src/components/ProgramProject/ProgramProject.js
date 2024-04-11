@@ -45,7 +45,7 @@ const ProgramProject = () => {
             }
           </ul>
         </div>
-        <div className="flex flex-col justify-center items-center pt-5 pb-5 text-center">
+        <div className="flex flex-col justify-center items-center pt-5 pb-5">
           <h3 className="mb-9 text-2xl font-bold leading-[1.2] text-primary dark:text-blue-200 sm:text-3xl md:text-[32px]">
             КАР'ЄРНЕ КОНСУЛЬТУВАННЯ
           </h3>
