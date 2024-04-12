@@ -1,11 +1,11 @@
 import React from 'react';
 import { ThemeToggler as Toggler } from 'gatsby-plugin-dark-mode';
 
-const ThemeToggler = () => {
+const ThemeSwitcher = () => {
   return (
     <Toggler>
       {({ theme, toggleTheme }) => (
-        <div className="flex flex-col justify-center ml-3 absolute right-[20%] sm:right-[-32px] lg:static">
+        <div className="flex flex-col justify-center ml-3 fixed right-8 bottom-8 bg-opacity-25 bg-slate-200 z-50">
           <label className="cursor-pointer p-4 border-slate-400 dark:border-slate-300 border-2 rounded-md" htmlFor="light-switch">
             <input type="checkbox" onChange={e => {
               console.log(e.target);
@@ -28,4 +28,4 @@ const ThemeToggler = () => {
   )
 }
 
-export default ThemeToggler
+export default ThemeSwitcher

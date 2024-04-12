@@ -1,7 +1,8 @@
-import React from 'react';
-import ThemeToggler from '../../ui/ThemeToggler';
+import React, { useState } from 'react';
 
 const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header x-data="{ navbarOpen: false, }"
       className="fixed bg-white bg-opacity-80 dark:bg-dark shadow-sm backdrop-blur-sm left-0 top-0 z-50 w-full">
@@ -14,12 +15,13 @@ const Header = () => {
           </div>
           <div className="flex w-full items-center justify-between px-4">
             <div>
-              <button id="navbarToggler" className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+              <button id="navbarToggler" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+                <span class="sr-only">Open menu</span>
                 <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
                 <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
                 <span className="relative my-[6px] block h-[2px] w-[30px] bg-body-color"></span>
               </button>
-              <nav id="navbarCollapse" className="dark:bg-dark-2 absolute right-4 top-full z-40 w-full max-w-[250px] rounded-lg bg-white px-6 py-5 shadow lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:shadow-none lg:dark:bg-transparent hidden">
+              <nav id="navbarCollapse" className={`dark:bg-dark-2 absolute right-4 top-full z-40 w-full max-w-[250px] rounded-lg bg-white px-6 py-5 shadow lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:shadow-none lg:dark:bg-transparent ${mobileMenuOpen ? 'flex flex-col' : 'hidden'}`}>
                 <ul className="blcok lg:flex">
                   <li>
                     <a href="#about_us" className="dark:text-dark-6 flex py-2 text-base font-medium text-body-color hover:text-dark dark:hover:text-white lg:ml-10 lg:inline-flex">
@@ -47,14 +49,13 @@ const Header = () => {
                     </a>
                   </li>
                 </ul>
+                <div className={`justify-end pr-16 sm:flex lg:pr-0 ${mobileMenuOpen ? 'flex flex-col pr-8 mt-5' : 'hidden'}`}>
+                  <a rel="noreferrer" target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLScBDB0gGnMrGYlOcxxGmAiN1JQ32L3bLohmOFLJAK7EzCjCLA/viewform" className="inline-flex items-center justify-center rounded-md border border-primary bg-primary px-7 py-3 text-center text-base font-medium text-white hover:border-[#1B44C8] hover:bg-[#1B44C8] active:border-[#1B44C8] active:bg-[#1B44C8] disabled:border-gray-3 disabled:bg-gray-3 disabled:text-dark-5">
+                    Взяти участь
+                  </a>
+                </div>
               </nav>
             </div>
-            <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
-              <a rel="noreferrer" target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLScBDB0gGnMrGYlOcxxGmAiN1JQ32L3bLohmOFLJAK7EzCjCLA/viewform" className="inline-flex items-center justify-center rounded-md border border-primary bg-primary px-7 py-3 text-center text-base font-medium text-white hover:border-[#1B44C8] hover:bg-[#1B44C8] active:border-[#1B44C8] active:bg-[#1B44C8] disabled:border-gray-3 disabled:bg-gray-3 disabled:text-dark-5">
-                Взяти участь
-              </a>
-            </div>
-            <ThemeToggler />
           </div>
         </div>
       </div >
