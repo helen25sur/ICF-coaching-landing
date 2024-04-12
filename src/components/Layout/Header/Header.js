@@ -1,5 +1,5 @@
 import React from 'react';
-import ThemeToggler from '../ui/ThemeToggler';
+import ThemeToggler from '../../ui/ThemeToggler';
 
 const Header = () => {
   return (
