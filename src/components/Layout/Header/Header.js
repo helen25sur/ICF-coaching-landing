@@ -9,10 +9,10 @@ const Header = () => {
       className="fixed bg-white bg-opacity-80 dark:bg-dark shadow-sm backdrop-blur-sm left-0 top-0 z-50 w-full">
       <div className="container mx-auto">
         <div className="relative z-40 -mx-4 flex items-center justify-between">
-          <div className="w-72 max-w-full px-4">
+          <div className="px-4">
             <a href="/" className="flex w-full py-5">
-              <StaticImage width={90} height={80} layout="fixed" src="../../../../static/ICF-Ukraine-logo.jpg" alt="Logo ICF Ukraine Chapter" />
-              <StaticImage width={100} height={80} layout="fixed" src="../../../../static/wine-logo.jpg" alt="Logo Women in Engineering" />
+              <StaticImage width={90} height={80} layout="constrained" src="../../../../static/ICF-Ukraine-logo.jpg" alt="Logo ICF Ukraine Chapter" />
+              <StaticImage width={100} height={80} layout="constrained" src="../../../../static/wine-logo.jpg" alt="Logo Women in Engineering" />
             </a>
           </div>
           <div className="flex w-full items-center justify-between px-4">

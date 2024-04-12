@@ -5,17 +5,17 @@ const HeroSection = () => {
     <section id="about_us" className="relative pb-[80px] pt-[120px] dark:bg-dark lg:pt-[132px]">
       <div className="container mx-auto">
         <div className="-mx-4 flex flex-wrap items-center">
-          <div className="w-full px-4 lg:w-1/2">
+          <div className="px-5 lg:w-1/2">
             <div className="mb-12 lg:mb-0">
-              <h2 className="mb-5 text-3xl text-center font-bold leading-[1.208] text-primary dark:text-blue-200 lg:text-[24px] xl:text-[28px]">
+              <div className="mb-5 text-2xl text-center font-bold leading-[1.208] text-primary dark:text-blue-200 lg:text-[24px] xl:text-[28px]">
                 ПАРТНЕРСЬКИЙ ПРОЄКТ
-                <ul className='list-inside list-disc text-2xl'>
-                  <li>коучів ICF</li>
+                <ul className='list-inside list-disc text-xl'>
+                  <li>коучів ICF</li>
                   <li>волонтерського проєкту WinE</li>
-                  <li>кар’єрної консультантки Галини Разумей</li>
+                  <li>кар’єрної консультантки Галини Разумей</li>
                 </ul>
-              </h2>
-              <h1 className="mb-5 text-3xl font-bold text-center leading-[1.208] text-dark dark:text-white lg:text-[28px] xl:text-[32px]">«Кар’єрне консультування з коучинговою підтримкою»</h1>
+              </div>
+              <h1 className="mb-5 text-2xl font-bold text-center leading-[1.208] text-dark dark:text-white lg:text-[28px] xl:text-[32px]">«Кар’єрне консультування з коучинговою підтримкою»</h1>
             </div>
 
             <div className="dark:text-dark-6 mb-8 max-w-[485px] text-lg text-body-color">
