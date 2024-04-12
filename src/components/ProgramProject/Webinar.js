@@ -17,7 +17,7 @@ const Webinar = () => {
           </div>
           <div className="w-full px-4 lg:w-1/2 2xl:w-5/12">
             <div className="mt-10 lg:mt-0 flex flex-col">
-              <h2 className="mb-5 text-2xl font-bold leading-tight text-dark dark:text-white sm:text-3xl sm:leading-tight md:text-4xl lg:text-3xl lg:leading-tight xl:text-4xl">
+              <h2 className="mb-5 text-2xl font-bold text-center leading-tight text-dark dark:text-white sm:text-3xl sm:leading-tight md:text-4xl lg:text-3xl lg:leading-tight xl:text-4xl">
                 БЕЗКОШТОВНИЙ ВЕБІНАР «МАРШРУТ ТВОГО СТАРТУ В ІТ»
               </h2>
               <h3 className='mb-3 text-2xl text-center font-bold leading-[1.2] text-primary dark:text-blue-200 sm:text-4xl md:text-[32px]'><span>16.04.2024 <br /> 18:00 - 19:30</span></h3>
