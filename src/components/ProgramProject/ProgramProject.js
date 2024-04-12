@@ -36,7 +36,7 @@ const ProgramProject = () => {
           <ul className="flex flex-wrap items-start justify-start mb-8">
             {
               programJSON.map((ws, idx) => {
-                return <li key={ws.title} className='xs:w-full sm:w-1/2 lg:w-1/3 h-full flex gap-2 px-4 justify-center items-start text-base text-body-color dark:text-dark-6'>
+                return <li key={ws.title} className='xs:w-full sm:w-1/2 lg:w-1/3 flex gap-2 px-4 justify-center items-start text-base text-body-color dark:text-dark-6'>
                   <span class="relative top-16 z-10 mr-2.5 flex h-[32px] w-full max-w-[32px] items-center justify-center rounded text-base text-white">
                     <span class="absolute left-0 top-0 z-[-1] h-full w-full -rotate-45 rounded bg-primary"></span>
                     {idx + 1}
