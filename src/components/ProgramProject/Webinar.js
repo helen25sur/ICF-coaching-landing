@@ -1,66 +1,27 @@
 import React from 'react'
+import TitleComponent from '../ui/TitleComponent'
 
 const Webinar = () => {
   return (
     <section className="overflow-hidden pb-8 pt-4 dark:bg-dark">
       <div className="container mx-auto">
-        <div className="flex flex-wrap items-center justify-between">
+        <TitleComponent align="center" text="1-й ЕТАП" />
+        <div className="flex flex-wrap items-center justify-between mt-12">
           <div className="w-full px-4 lg:w-6/12">
             <div className="relative mb-8 lg:mb-0">
               <div className="mx-auto max-w-[430px] rounded-tl-[50px] sm:rounded-tl-[70px]">
                 <img src="/program-project.jpg" alt="Unsplash - Woman's working and drinking coffee" className="w-full rounded-tl-[50px] sm:rounded-tl-[70px]" />
                 <p className='sr-only'>Photo by <a href="https://unsplash.com/@andrewtneel?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Andrew Neel</a> on <a href="https://unsplash.com/photos/man-holding-white-ceramic-teacup-QLqNalPe0RA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
               </div>
-              <div className="absolute bottom-0 right-0 z-10 max-w-[320px] overflow-hidden rounded-tr-[50px] bg-primary px-6 py-10 text-xl font-bold text-white sm:px-10 sm:text-2xl">
-                <span>16.04.2024 <br /> 18:00 - 19:30</span>
-                <div>
-                  <span className="absolute left-0 top-0 -z-10">
-                    <svg width="115" height="117" viewBox="0 0 115 117" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect opacity="0.1" x="-30.1333" y="20.4912" width="76" height="131.304" transform="rotate(-42.8643 -30.1333 20.4912)" fill="url(#paint0_linear_1408_646)"></rect>
-                      <defs>
-                        <linearGradient id="paint0_linear_1408_646" x1="7.8667" y1="20.4912" x2="7.8667" y2="151.795" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white"></stop>
-                          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </span>
-                  <span className="absolute right-0 top-0 -z-10">
-                    <svg width="239" height="144" viewBox="0 0 239 144" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect opacity="0.1" x="0.872192" y="-5.28418" width="155.563" height="209.511" transform="rotate(-42.8643 0.872192 -5.28418)" fill="url(#paint0_linear_1408_647)"></rect>
-                      <defs>
-                        <linearGradient id="paint0_linear_1408_647" x1="78.6537" y1="-5.28418" x2="78.6537" y2="204.226" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white"></stop>
-                          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </span>
-                  <span className="absolute bottom-0 right-5 -z-10">
-                    <svg width="185" height="116" viewBox="0 0 185 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <rect opacity="0.1" x="184.849" y="118.71" width="101.246" height="161.199" transform="rotate(137.136 184.849 118.71)" fill="url(#paint0_linear_1408_648)"></rect>
-                      <defs>
-                        <linearGradient id="paint0_linear_1408_648" x1="235.472" y1="118.71" x2="235.472" y2="279.91" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="white"></stop>
-                          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2 2xl:w-5/12">
-            <div className="mt-10 lg:mt-0">
-              <span className="dark:text-dark-6 mb-2 block text-lg font-bold text-body-color md:mb-4">
-                Реєструйся  та вирушай у свою впевнену подорож в ІТ
-              </span>
-              <h2 className="mb-11 text-2xl font-bold leading-tight text-dark dark:text-white sm:text-3xl sm:leading-tight md:text-4xl lg:text-3xl lg:leading-tight xl:text-4xl">
+            <div className="mt-10 lg:mt-0 flex flex-col">
+              <h2 className="mb-5 text-2xl font-bold leading-tight text-dark dark:text-white sm:text-3xl sm:leading-tight md:text-4xl lg:text-3xl lg:leading-tight xl:text-4xl">
                 БЕЗКОШТОВНИЙ ВЕБІНАР «МАРШРУТ ТВОГО СТАРТУ В ІТ»
               </h2>
-
-              <div className="mb-8 flex">
+              <h3 className='mb-3 text-2xl text-center font-bold leading-[1.2] text-primary dark:text-blue-200 sm:text-4xl md:text-[32px]'><span>16.04.2024 <br /> 18:00 - 19:30</span></h3>
+              <div className="my-8 flex">
                 <div className="w-full">
                   <ul className="space-y-3">
                     <li className="flex text-base text-body-color dark:text-dark-6">
@@ -150,7 +111,7 @@ const Webinar = () => {
                         </defs>
                       </svg>
                     </span>
-                    РЕЄСТРАЦІЯ
+                    ВЗЯТИ УЧАСТЬ
                   </a>
                 </div>
               </div>

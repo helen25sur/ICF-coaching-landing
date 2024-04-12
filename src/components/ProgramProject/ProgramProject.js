@@ -3,6 +3,7 @@ import programJSON from '../../data/program_project.json';
 import consultingSupportJSON from '../../data/consalting_support.json';
 import Webinar from './Webinar';
 import Workshop from './Workshop';
+import TitleComponent from '../ui/TitleComponent';
 
 const ProgramProject = () => {
   return (
@@ -22,9 +23,9 @@ const ProgramProject = () => {
           <Webinar />
         </div>
 
-        <div className="flex flex-wrap justify-center pt-5 pb-5 text-center">
+        <div className="flex flex-wrap flex-col items-center justify-center pt-5 pb-5 text-center">
+          <TitleComponent text="2-й ЕТАП" align="center" />
           <h3 className="mb-3 text-2xl font-bold leading-[1.2] text-dark dark:text-white sm:text-3xl md:text-[32px]">
-            ЩО ПРОПОНУЄМО ПІСЛЯ ВЕБІНАРУ? <br />
             <span className='inline-flex pt-3 pb-6 text-primary dark:text-blue-200'>ПРАКТИЧНІ ВОРКШОПИ З КАР’ЄРНОГО КОНСУЛЬТУВАННЯ</span>
           </h3>
           <p className="dark:text-dark-6 mb-9 text-xl text-body-color max-w-xl">
@@ -32,11 +33,11 @@ const ProgramProject = () => {
           </p>
         </div>
         <div className="flex justify-center pt-5 pb-5 text-center w-full">
-          <ul className="flex flex-wrap items-start justify-center mb-8">
+          <ul className="flex flex-wrap items-start justify-start mb-8">
             {
               programJSON.map((ws, idx) => {
-                return <li key={ws.title} className='xs:w-full sm:w-1/2 lg:w-1/3 flex gap-2 px-4 justify-center items-start text-base text-body-color dark:text-dark-6'>
-                  <span class="relative z-10 mr-2.5 self-center flex h-[32px] w-full max-w-[32px] items-center justify-center rounded text-base text-white">
+                return <li key={ws.title} className='xs:w-full sm:w-1/2 lg:w-1/3 h-full flex gap-2 px-4 justify-center items-start text-base text-body-color dark:text-dark-6'>
+                  <span class="relative top-16 z-10 mr-2.5 flex h-[32px] w-full max-w-[32px] items-center justify-center rounded text-base text-white">
                     <span class="absolute left-0 top-0 z-[-1] h-full w-full -rotate-45 rounded bg-primary"></span>
                     {idx + 1}
                   </span>
@@ -46,6 +47,7 @@ const ProgramProject = () => {
           </ul>
         </div>
         <div className="flex flex-col justify-center items-center pt-5 pb-5">
+          <TitleComponent align="center" text="3-й ЕТАП" />
           <h3 className="mb-9 text-2xl font-bold leading-[1.2] text-primary dark:text-blue-200 sm:text-3xl md:text-[32px]">
             КАР'ЄРНЕ КОНСУЛЬТУВАННЯ
           </h3>
@@ -94,7 +96,6 @@ const ProgramProject = () => {
               })
             }
           </ul>
-          <p className='text-xl text-center text-dark-3 dark:text-dark-8 max-w-3xl'><strong className='text-primary dark:text-blue-200'>Наш проєкт</strong> – це структурований підхід до пошуку роботи через практичне пропрацювання проблем: від зовнішньої “упаковки” власної експертизи (резюме, LinkedIn профіль, техніка співбесіди) до внутрішньої впевненості, що переконає будь-якого рекрутера</p>
         </div>
       </div>
     </section>

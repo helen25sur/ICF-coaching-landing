@@ -9,15 +9,16 @@ const Speaker = ({ name, description, photo, contacts }) => {
 
   return (
     <div className="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
-      <div className="shadow-1 dark:shadow-box-dark group mb-8 rounded-[5px] bg-white px-5 pb-10 pt-12 dark:bg-dark">
+      <div className="h-full shadow-1 dark:shadow-box-dark group mb-8 rounded-[5px] bg-white px-5 pb-10 pt-12 dark:bg-dark">
         <div className="relative z-10 mx-auto mb-5 h-[200px] w-[200px]overflow-hidden">
           <img src={photo} alt={name} className="mx-auto h-[200px] w-[200px] object-cover object-top rounded-full" />
         </div>
-        <div className="text-center">
+        <div className="text-center flex flex-col h-[60%]">
           <h3 className="mb-1 text-xl font-bold text-primary dark:text-blue-200">
             {name}
           </h3>
           <div className="dark:text-dark-7 mb-5 text-base text-body-color whitespace-pre-line">
+            {name == 'Галина Разумей' ? <strong>кар’єрна консультантка, </strong> : ''}
             {description.length > 0 ? description : ''} <div>
               <p className='mb-2'><strong>{description.title}</strong></p>
               {description.specialization ? <SpecializationSpeaker specialization={description.specialization} /> : ''}
@@ -27,7 +28,7 @@ const Speaker = ({ name, description, photo, contacts }) => {
               {description.other_experience ? <OtherExperienceSpeaker other_experience={description.other_experience} /> : ''}
             </div>
           </div>
-          <div className="flex items-center justify-center gap-5">
+          <div className="mt-auto justify-self-end flex items-center justify-center gap-5">
             {contacts.map(c => {
               return (
                 <a key={c.social} href={c.href} className="text-dark-6 hover:text-primary">

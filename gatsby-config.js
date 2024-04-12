@@ -8,5 +8,6 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: ['gatsby-plugin-tailwindcss', 'tailgrids', 'gatsby-plugin-postcss', 'gatsby-plugin-dark-mode'],
+  plugins: ['gatsby-plugin-tailwindcss', 'tailgrids', 'gatsby-plugin-postcss', 'gatsby-plugin-dark-mode', 'gatsby-plugin-image',
+    'gatsby-plugin-sharp'],
 }
