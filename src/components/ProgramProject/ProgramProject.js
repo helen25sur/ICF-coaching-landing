@@ -33,7 +33,7 @@ const ProgramProject = () => {
           </p>
         </div>
         <div className="flex justify-center pt-5 pb-5 text-center w-full">
-          <ul className="flex flex-wrap items-start justify-start mb-8">
+          <ul className="flex flex-wrap items-stretch justify-start mb-8">
             {
               programJSON.map((ws, idx) => {
                 return <li key={ws.title} className='xs:w-full sm:w-1/2 lg:w-1/3 flex gap-2 px-4 justify-center items-start text-base text-body-color dark:text-dark-6'>

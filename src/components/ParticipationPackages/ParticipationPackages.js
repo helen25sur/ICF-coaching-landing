@@ -12,7 +12,7 @@ const ParticipationPackages = () => {
             <TitleComponent text="ПАКЕТИ УЧАСТІ" />
             <div className='flex flex-wrap justify-center -mx-4 items-stretch mt-10 gap-y-6'>
               {
-                participationPackagesJSON.map(pack => <Package title={pack.title} contains={pack.contains} cost={pack.cost} />)
+                participationPackagesJSON.map(pack => <Package title={pack.title} contains={pack.contains} cost={pack.cost} discount={pack.discount} />)
               }
             </div>
 

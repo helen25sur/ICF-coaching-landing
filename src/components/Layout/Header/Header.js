@@ -11,8 +11,8 @@ const Header = () => {
         <div className="relative z-40 -mx-4 flex items-center justify-between">
           <div className="px-4">
             <a href="/" className="flex w-full py-5">
-              <StaticImage width={90} height={80} layout="constrained" src="../../../../static/ICF-Ukraine-logo.jpg" alt="Logo ICF Ukraine Chapter" />
-              <StaticImage width={100} height={80} layout="constrained" src="../../../../static/wine-logo.jpg" alt="Logo Women in Engineering" />
+              <StaticImage width={90} height={80} layout="constrained" style={{ "opacity": ".9" }} src="../../../../static/ICF-Ukraine-logo.png" alt="Logo ICF Ukraine Chapter" />
+              <StaticImage width={100} height={80} layout="constrained" style={{ "opacity": ".8" }} src="../../../../static/wine-logo.png" alt="Logo Women in Engineering" />
             </a>
           </div>
           <div className="flex w-full items-center justify-between px-4">
