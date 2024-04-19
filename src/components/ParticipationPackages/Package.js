@@ -8,12 +8,9 @@ const Package = ({ title, contains, cost, discount }) => {
           {title}
         </span>
         <h2 class="mb-5 text-xl font-bold text-dark dark:text-white">
-          {cost !== 'Безкоштовно' && cost !== 'формується за запитом учасниці/учасника' ? <s><span> {cost}</span></s> : cost}
+          {cost}
         </h2>
-        <h2 class="mb-5 text-3xl font-bold text-dark dark:text-white">
-          {discount}
-        </h2>
-        {cost !== 'Безкоштовно' && cost !== 'формується за запитом учасниці/учасника' ? <span className='text-sm text-body-color dark:text-dark-5'> Вартість дійсна до 17:00 19.04.2024р. </span> : ''}
+
 
         <div class="mb-9 mt-4 flex flex-col gap-[14px]">
           {
